@@ -125,3 +125,130 @@ Work in progress as I am actively collecting these.
 - "iOS App Reverse Engineering" https://github.com/iosre/iOSAppReverseEngineering
 - "iOS Hacker's Handbook" by Charlie Miller, Dion Blazakis, Dino Dai Zovi, Stefan Esser, Vincenzo Iozzo, Ralf-Philip Weinmann 
 - "Hacking and Securing iOS Applications" by Jonathan Zdziarski
+
+---
+
+**Reverse Engineering Resources**
+
+**Debugging**
+
+These are very important guides for understanding the debugging process and how applications work.
+
+- Mac OS X Debugging Magic Technical Note (TN2124) ([link](https://developer.apple.com/library/mac/technotes/tn2124/_index.html) - [PDF Mirror](https://pewpewthespells.com/re/Technical_Note_TN2124.pdf))
+- iOS Debugging Magic Technical Note (TN2239) ([link](https://developer.apple.com/library/ios/technotes/tn2239/_index.html) - [PDF Mirror](https://pewpewthespells.com/re/Technical_Note_TN2239.pdf))
+- Understanding and Analyzing iOS Application Crash Reports (TN2151) ([link](https://developer.apple.com/library/ios/technotes/tn2151/_index.html) - [PDF Mirror](https://pewpewthespells.com/blog/re/Understanding_and_Analyzing_iOS_Application_Crash_Reports.pdf))
+- Malloc Debug Environment Variables ([link](https://developer.apple.com/library/mac/releasenotes/DeveloperTools/RN-MallocOptions/) - [PDF Mirror](https://pewpewthespells.com/re/Malloc_Debug_En_Vars.pdf))
+
+**Mach-O Binaries**
+
+Mac OS X and iOS use Mach-O file format for executable binaries and shared libraries. It supports multiple architectures in one binary file (Universal or fat binaries).
+
+- Mach-O Wikipedia ([link](http://en.wikipedia.org/wiki/Mach-O))
+- OS X ABI Mach-O File Format Reference ([link](https://developer.apple.com/library/mac/documentation/developertools/Conceptual/MachORuntime/Reference/reference.html) - [PDF](https://developer.apple.com/library/mac/documentation/developertools/Conceptual/MachORuntime/Mach-O_File_Format.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Mach-O_File_Format.pdf))
+- Mach-O Programming Topics ([link](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/MachOTopics/0-Introduction/introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/MachOTopics/Mach-O_Programming.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Mach-O_Programming.pdf))
+
+**Analysis**
+
+Guides and introductory material to binary analysis.
+
+- Analyzing Binaries with Hopper ([link](http://abad1dea.tumblr.com/post/23487860422/analyzing-binaries-with-hoppers-decompiler))
+
+**System ABIs**
+
+Calling conventions define how functions and subroutines receive the parameters passed to them from the calling function.
+
+- ABI Wikipedia ([link](http://en.wikipedia.org/wiki/Application_binary_interface))
+- Calling Conventions Wikipedia ([link](http://en.wikipedia.org/wiki/Calling_convention))
+- Mac OS X ABI ([link](https://developer.apple.com/library/mac/documentation/developertools/conceptual/LowLevelABI/000-Introduction/introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/developertools/conceptual/LowLevelABI/Mac_OS_X_ABI_Function_Calls.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Mac_OS_X_ABI_Function_Calls.pdf))
+- iOS ABI ([link](https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSABIReference/Introduction/Introduction.html) - [PDF](https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSABIReference/iPhoneOSABIReference.pdf) - [PDF Mirror](https://pewpewthespells.com/re/iPhoneOSABIReference.pdf))
+- Dynamic Library Programming Topics ([link](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/Dynamic_Libraries.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Dynamic_Libraries.pdf)) ([Companion File](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/DynamicLibraries_companion.zip) - [Companion File Mirror](https://pewpewthespells.com/re/DynamicLibraries_companion.zip))
+- OS X ABI Dynamic Loader Reference ([link](https://developer.apple.com/library/mac/documentation/developertools/Reference/MachOReference/Reference/reference.html) - [PDF](https://developer.apple.com/library/mac/documentation/developertools/Reference/MachOReference/MachOReference.pdf) - [PDF Mirror](https://pewpewthespells.com/re/MachOReference.pdf))
+
+**Language Resources**
+
+Language specific knowledge is often required to understand what is going on behind the scenes.
+
+- Intel x86 Architecture ([PDF](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Intel_x86_64_Ref.pdf))
+- Introduction to x64 Assembly ([PDF](http://software.intel.com/sites/default/files/m/d/4/1/d/8/Introduction_to_x64_Assembly.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Introduction_to_x64_Assembly.pdf))
+- ARM Architecture for ARMv7 ([PDF Mirror](https://pewpewthespells.com/re/arm_architecture_reference_manual.pdf))
+- ARM Architecture for ARM64 ([PDF Mirror](https://pewpewthespells.com/re/arm64_architecture_reference_manual.pdf))
+- OS X Assembler Reference ([link](https://developer.apple.com/library/mac/documentation/DeveloperTools/Reference/Assembler/000-Introduction/introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/DeveloperTools/Reference/Assembler/Assembler.pdf) - [PDF Mirror](https://pewpewthespells.com/re/Assembler.pdf))
+- Learn C The Hard Way ([link](http://c.learncodethehardway.org/book/))
+- The C Library Reference Guide ([link](http://www.acm.uiuc.edu/webmonkeys/book/c_guide/))
+- Objective-C Language ([link](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/ProgrammingWithObjectiveC.pdf) - [PDF Mirror](https://pewpewthespells.com/re/ProgrammingWithObjectiveC.pdf))
+- Objective-C Runtime ([link](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html) - [PDF](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/ObjCRuntimeGuide.pdf) - [PDF Mirror](https://pewpewthespells.com/re/ObjCRuntimeGuide.pdf))
+
+**Further Reading**
+
+Collection of blogs and reading resources that give deep insight into how many aspects of languages and system functionality.
+
+- NSBlog ([link](http://www.mikeash.com/pyblog/))
+- Reverse Engineering Mac OS X ([link](http://reverse.put.as/))
+- Landon's Blog ([link](http://landonf.bikemonkey.org/))
+- OS X Internals ([link](http://osxbook.com/))
+- Greg Parker's Blog ([link](http://www.sealiesoftware.com/blog/))
+- Ridiculous Fish ([link](http://ridiculousfish.com/blog/))
+- Snare's Blog ([link](http://ho.ax/))
+- To The Apple's Core ([link](http://www.newosxbook.com/index.php))
+- The Objective-C Runtime: Understanding and Abusing ([link](http://www.phrack.org/issues.html?issue=66&id=4))
+
+**Tools**
+
+**Mach-O Binary Analyzers:**
+
+- MachOViewer ([Homepage](http://sourceforge.net/projects/machoview/))
+
+**Hex Editors:**
+
+- Hex Fiend ([Homepage](http://ridiculousfish.com/hexfiend/))
+- 0xED ([Homepage](http://www.suavetech.com/0xed/))
+- Synalyze It! ([Homepage](http://www.synalysis.net/))
+
+**Disassemblers:**
+
+- Hopper ([Homepage](http://www.hopperapp.com/))
+- IDA ([Homepage](https://www.hex-rays.com/products/ida/index.shtml))
+- otool ([man page](x-man-page://1/otool))
+- otx ([Homepage](http://otx.osxninja.com/))
+
+**Decompilers:**
+
+- Hopper ([Homepage](http://www.hopperapp.com/))
+- Hex-Rays ([Homepage](https://www.hex-rays.com/products/decompiler/index.shtml))
+- classdump ([Homepage](http://stevenygard.com/projects/class-dump/))
+- codedump (i386) ([Source ZIP](https://pewpewthespells.com/re/i386codedump.zip))
+
+**Debuggers:**
+
+- GDB (Not shipped on OS X anymore) ([Homepage](http://www.sourceware.org/gdb/))
+- LLDB ([Homepage](http://lldb.llvm.org/) - [man page](x-man-page://1/lldb))
+- PonyDebugger ([link](https://github.com/square/PonyDebugger))
+
+**Memory Editors:**
+
+- Bit Slicer ([Homepage](http://zorg.tejat.net/programs/) - [Source](https://bitbucket.org/zorgiepoo/bit-slicer/))
+
+**Various Command Line Tools:**
+
+- nm ([man page](x-man-page://1/nm))
+- strings ([man page](x-man-page://1/strings))
+- dsymutil ([man page](x-man-page://1/dsymutil))
+- install\_name\_tool ([man page](x-man-page://1/install_name_tool))
+- ld ([man page](x-man-page://1/ld))
+- lipo ([man page](x-man-page://1/lipo))
+- codesign ([man page](x-man-page://1/codesign))
+- hexdump ([man page](x-man-page://1/hexdump))
+- dyld\_shared\_cache ([link](x-man-page://1/hexdump))
+- vbindiff ([link](http://www.cjmweb.net/vbindiff/))
+- binwalk ([link](https://code.google.com/p/binwalk/))
+- xpwntool ([link](http://theiphonewiki.com/wiki/Xpwntool))
+- objdump ([link](https://sourceware.org/binutils/docs/binutils/objdump.html))
+
+**Useful Source Repositories:**
+
+- Apple Source Code ([link](https://www.opensource.apple.com/))
+- PLCrashReporter ([link](https://www.plcrashreporter.org/contribute))
+- Mike Ash's Github ([link](https://github.com/mikeash))
+- Landon Fuller's Github ([link](https://github.com/landonf))
+- Jonathan Rentzsch's Github ([link](https://github.com/rentzsch))
+- fG!'s Github ([link](https://github.com/gdbinit))
